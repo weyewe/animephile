@@ -1,0 +1,14 @@
+<% content_for :jumbotron do %>
+	<div class="jumbotron">
+    <h1>Yo bro! slow page loading?</h1>
+    <p class="lead">This app will help you to scrap those comic pages and display it on one page</p>
+  </div>
+<% end %>
+
+<% @comics.each do |comic| %>
+ <h4><%= link_to comic.title , comic_pages_url( comic ) %></h4>
+<% end %>
+
+
+
+

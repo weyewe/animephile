@@ -1,0 +1,28 @@
+<% content_for :jumbotron do %>
+	<div class="jumbotron">
+    <h1><%= @comic.title %></h1>
+  </div>
+<% end %>
+
+
+
+<% @pages.each do |page| %>
+
+	<!--start: blog -->
+	<div class="blog clearfix">
+		<div class="span6 img-polaroid blog-img" style='text-align:center;'>
+					<%= image_tag page.image_url  %> 
+    </div>
+
+         
+		
+ 	</div><!--end: blog -->
+
+
+
+<% end %>
+
+ 
+
+
+
