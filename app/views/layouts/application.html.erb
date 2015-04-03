@@ -92,6 +92,10 @@
 
     </div> <!-- /container -->
 
+    <%#= image_tag Page.last.local_url  %> 
+
+    <%= image_tag( Page.order("id ASC").first.local_url , :alt => "awesome") %>
+
 
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
